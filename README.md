@@ -1,6 +1,6 @@
 # PenBot Software
 
-![PenBot drawing a portrait](https://lh3.googleusercontent.com/18LqbpLRpf971pptDaVmZZWIqbTsPaRLuZvRnbTiycDLO3Aw37QygkijZCfkY40S_Cp1dLZQo5zBAl33nHsXtAsS-NeGe_soHLYb4FPm_cRuwVhq07QOiOtthHkRaR1Kxb2cXcqi4_NWa0X_myEi3oqvU3O3mFQ-cHp3KnlIdf5KmeB7Zh4I4A=w1280)
+![PenBot drawing a portrait](https://github.com/user-attachments/assets/35ec1e40-f3d7-4ee3-b102-978ef88c18da)
 
 Welcome to the official repository for the software that powers **PenBot**, a linkage-based drawing robot that turns human faces into unique vector portraits. This repo contains all the janky but functional Python code that runs on the built-in hardware. This workflow uses computer vision, low-level motor control, coordinate processing, and more.
 
@@ -17,6 +17,8 @@ The project was born from a simple, unconventional idea: to have a robot sign my
 *   **Advanced Motion Control**: Implements inverse kinematics to translate Cartesian coordinates into complex motor angles. A Digital Differential Analyzer (DDA) algorithm ensures smooth, coordinated movement between the two coaxial stepper motors.
 *   **Interactive UI**: An OpenCV-based user interface provides a live preview, capture controls, and real-time drawing progress.
 *   **Modular Architecture**: The code is separated into logical components for handling vision, SVG conversion, robot driving, and motion control.
+
+<img width="972" height="783" alt="penbot-topdown" src="https://github.com/user-attachments/assets/da2453ae-0724-438c-b44f-2a393414124f" />
 
 ## Software Architecture
 
@@ -50,6 +52,7 @@ These calculations are contained within **`penbot_math.py`**.
 To make this complex geometry easier to understand, we developed an interactive simulation that visualizes the trigonometric relationships and constraints of the linkage. This is an excellent resource for anyone looking to understand how the robot's coordinate system works.
 
 **[Interactive Linkage Simulation on Desmos](https://www.desmos.com/calculator/yp5hnid8xg)**
+<img width="1158" height="593" alt="image" src="https://github.com/user-attachments/assets/a3eb785f-2424-4890-856e-b4d18436c5e7" />
 
 ## Running the OpenSauce Demo
 
@@ -124,6 +127,8 @@ The initial spark for this project came from the brilliant [Line-us](https://www
 ### The Line-us Clone by Barton Dring
 
 In the early stages, this project was heavily guided by the fantastic work of Barton Dring, who documented his own [Line-us clone on his buildlog.net blog](https://www.buildlog.net/blog/2017/02/a-line-us-clone/). This article was an invaluable resource that helped kickstart the development process.
+
+<img width="300" height="260" alt="line-us-clone" src="https://github.com/user-attachments/assets/325f3dcc-2ade-4ccc-9a91-d1663e1dcac3" />
 
 His detailed post provided the foundational blueprint, including the reverse-engineered arm lengths and, most importantly, the fundamental approach to solving the inverse kinematics using intersecting circles. This documentation was the critical starting point that enabled the development of PenBot’s own mathematical models and control software.
 
